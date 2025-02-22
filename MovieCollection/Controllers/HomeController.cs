@@ -45,6 +45,7 @@ namespace MovieCollection.Controllers
         [HttpPost]
         public IActionResult MovieForm(Application response)
         {
+            
             if (ModelState.IsValid)
             {
                 _context.Movies.Add(response);//Add record to the database

@@ -14,7 +14,7 @@ namespace MovieCollection.Models
         [ForeignKey("CategoryId")]
         public int? CategoryId { get; set; }  // Foreign Key
 
-        public Category Category { get; set; }  // Navigation propert
+        public Category? Category { get; set; }  // Navigation propert
 
         [Required(ErrorMessage ="Sorry, you need to enter a proper movie title.")]
         public string Title { get; set; }
